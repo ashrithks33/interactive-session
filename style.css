@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://www.dzigns.in/wp-content/uploads/2023/02/A-1-13-scaled.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 40px;
+  color: #333;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);  /* Light, clean overlay */
+  z-index: -1;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 12px;
+  background: #f5f7fa;
+  box-shadow: inset 2px 2px 5px #dfe3e6, inset -3px -3px 6px #ffffff;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #aad1f6;
+}
+
+button {
+  background: linear-gradient(to right, #4CAF50, #3e8e41);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #45a049, #357e36);
+  transform: scale(1.02);
+}
+
+#msg {
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+#bookingList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#bookingList li {
+  background: #fdfdfd;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: background 0.2s ease;
+}
+
+#bookingList li:hover {
+  background: #f0f4f8;
+}
+
+.top-right-logo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}

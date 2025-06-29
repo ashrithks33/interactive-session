@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Session Slot Bookings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <img src="https://imgs.search.brave.com/RMFudJDqh0WycMw_J_gZuF78Jq_ERr0Fwk34faIWPPc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9haW1s/LnZ2Y2UuYWMuaW4v/dmVkaGEvaW1hZ2Vz/L3Z2Y2UtbG9nby5w/bmc" alt="VVCE Logo" class="top-right-logo" />
+
+  <div class="container">
+    <h1>INTERACTIVE SESSION SLOT BOOKINGS</h1> 
+    <h2>WELCOME</h2>
+    <p id="facultyDetails"></p>
+
+    <form id="bookingForm">
+      <select id="branch" required></select>
+      <select id="semester" required></select>
+      <input type="text" id="subject" placeholder="Enter Subject/Course" required />
+      <select id="room" required></select>
+      <select id="date" required></select>
+      <select id="slot" required>
+        <option value="">Select Slot</option>
+        <option value="8:30 AM - 9:30 AM">8:30 AM - 9:30 AM</option>
+        <option value="11:00 AM - 1:00 PM">11:00 AM - 1:00 PM</option>
+        <option value="2:00 PM - 4:00 PM">2:00 PM - 4:00 PM</option>
+      </select>
+      
+
+      <button type="submit">Book</button>
+      <p id="msg"></p>
+    </form>
+
+    <button onclick="logout()">Logout</button>
+    <button onclick="downloadCSV()">Download Bookings</button>
+
+    <h2>Bookings</h2>
+    <ul id="bookingList"></ul>
+    <!-- Add this in index.html where the buttons are -->
+<div id="adminControls" style="display: none;">
+  <button onclick="clearAllBookings()">Clear All Bookings</button>
+</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
